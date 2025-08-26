@@ -477,5 +477,4 @@ if st.button("Run Analysis"):
         st.error("The minimum bucket value cannot be greater than the maximum value.")
     else:
         with st.spinner("Processing reports... This may take a while."):
-
             process_data(uploaded_file, min_reports, max_reports)
