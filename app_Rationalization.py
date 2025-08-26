@@ -18,7 +18,7 @@ from groq import Groq
 
 # Place your Groq API key here or use st.secrets.
 # client = Groq(api_key=st.secrets["groq_api_key"])
-client = Groq(api_key='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')
+client = Groq(api_key='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')
 
 def get_report_table_columns(report_name, sql, client):
     """Function to interact with the Groq API for SQL analysis."""
@@ -477,4 +477,5 @@ if st.button("Run Analysis"):
         st.error("The minimum bucket value cannot be greater than the maximum value.")
     else:
         with st.spinner("Processing reports... This may take a while."):
+
             process_data(uploaded_file, min_reports, max_reports)
